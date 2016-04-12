@@ -1,0 +1,142 @@
+$primary-color: #5A5A5A; // top nav
+$secondary-color: #404040; // side nav
+$sub-nav-color: #2F2F2F;
+$nav-accordion-header-border: #303031;
+
+/***** sideNav.scss *****/
+nav.top-nav {
+	height: 64px;
+}
+.side-nav {
+    width: 260px;
+    background-color: $secondary-color;
+}
+.side-nav.fixed a {
+    color: #fff;
+}
+ 
+/***** style.scss *****/
+/*** logo ***/
+#logo-container {
+    height: 31px;
+}
+ 
+/*** navigation menu ***/
+header, main, footer {  /* show nav */
+    //padding-left: 260px;
+    display: block;
+}
+@media only screen and (max-width: 992px) { /* hide nav */
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+ul.side-nav.fixed ul.collapsible-accordion { /* accordion header background */
+    background-color: $secondary-color;
+}
+.side-nav .collapsible-body { /* accordion body background */
+    background-color: $sub-nav-color;
+}
+ul.side-nav.fixed li.logo { /* adjust margin, logo border */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: 1px solid $nav-accordion-header-border;
+}
+ul.side-nav.fixed li li {  /* adjust nav item border */
+    border-bottom: 1px solid $nav-accordion-header-border;
+}
+ 
+ul.side-nav.fixed li li li {  /* adjust nav sub-item border */
+    border-bottom: 1px solid #232323;
+}
+ 
+/***** navbar.scss *****/
+nav {
+    background-color: #4B0082;
+    opacity: 0.4;
+}
+nav .nav-wrapper ul {
+    margin-right: 25px;
+}
+ 
+/***** collapsible.scss *****/
+/*** sideNav collapsible styling ***/
+.side-nav .collapsible-header {
+    margin: 0;
+}
+.side-nav .collapsible-body li a {
+    margin: 0 1rem 0 1rem;
+}
+
+/*** style.scss ***/
+header, main, footer {
+    padding-left: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+body{
+    background-image: url('http://i.imgur.com/WhPadGX.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+p {
+    color: #fff;
+    margin: 0px 10px;
+    font-size: 20px;
+    float: center;
+    padding: 4px 8px;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+// /*** sidenav.scss ***/
+
+// ul.side-nav.fixed li a {
+// 	font-size: 13px;
+// 	line-height: 44px;
+// 	height: 44px;
+// }
+
+// .side-nav a {
+// 	height: 44px;
+// }
+
+// // nav.top-nav a.page-title {
+// // 	line-height: 64px;
+// // }
+
+/***** buttons.scss *****/
+.btn{
+    background-color: #4B0082;
+}
+
+/***** global.scss *****/
+footer.page-footer{
+    background-color: #fff;
+    opacity: 0.0;
+    padding-top: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer.page-footer .footer-copyright{
+    background-color: #fff;
+}
+
+/***** normalize.scss *****/
+img {
+    border: 5px solid white;
+    margin: 20px;
+}
+
+
