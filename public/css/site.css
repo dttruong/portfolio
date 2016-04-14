@@ -1848,7 +1848,9 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border-color: white; 
+  margin: 2px; 
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -6930,8 +6932,6 @@ footer.page-footer .footer-copyright {
   background-color: #fff; }
 
 /***** normalize.scss *****/
-img {
-  border: 2px solid white; }
 
 
 @charset "UTF-8";
