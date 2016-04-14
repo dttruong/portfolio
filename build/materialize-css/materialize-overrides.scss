@@ -62,37 +62,6 @@ nav .nav-wrapper ul {
     margin: 0 1rem 0 1rem;
 }
 
-/*** style.scss ***/
-header, main, footer {
-    padding-left: 10px;
-}
-
-h1 {
-    font-size: 80px;
-    margin-bottom: 0px;
-}
-
-body{
-    background-image: url('http://i.imgur.com/WhPadGX.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-}
-
-h4 {
-    margin-top: 0px;
-}
-
-p {
-    color: #fff;
-    margin: 0px 10px;
-    font-size: 20px;
-    float: center;
-    padding: 4px 8px;
-    color: white;
-    background: rgba(0, 0, 0, 0.75);
-}
-
 // /*** sidenav.scss ***/
 
 // ul.side-nav.fixed li a {
@@ -126,7 +95,5 @@ footer.page-footer{
 footer.page-footer .footer-copyright{
     background-color: #fff;
 }
-
-/***** normalize.scss *****/
 
 

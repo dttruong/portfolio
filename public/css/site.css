@@ -1710,11 +1710,20 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
+header, main, footer {
+    padding-left: 10px;
+}
+
 /**
  * Remove default margin.
  */
-body {
-  margin: 0; }
+body{
+    background-image: url('http://i.imgur.com/WhPadGX.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-color: #fff;
+    margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -1810,8 +1819,21 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  font-size: 80px;
+  margin-bottom: 0px; }
+
+h4 {
+    margin-top: 0px;
+}
+
+p {
+    font-color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    float: center;
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.75);
+}
 
 /**
  * Address styling not present in IE 8/9.
@@ -1848,7 +1870,13 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border-color: white;
+  margin: 2px;
+}
+
+.container {
+  font-color: white;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -6891,27 +6919,11 @@ nav .nav-wrapper ul {
 header, main, footer {
   padding-left: 10px; }
 
-h1 {
-  font-size: 80px;
-  margin-bottom: 0px; }
-
 body {
   background-image: url("http://i.imgur.com/WhPadGX.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff; }
-
-h4 {
-  margin-top: 0px; }
-
-p {
-  color: #fff;
-  margin: 0px 10px;
-  font-size: 20px;
-  float: center;
-  padding: 4px 8px;
-  color: white;
-  background: rgba(0, 0, 0, 0.75); }
 
 /***** buttons.scss *****/
 .btn {
@@ -6928,8 +6940,6 @@ footer.page-footer {
 
 footer.page-footer .footer-copyright {
   background-color: #fff; }
-
-/***** normalize.scss *****/
 
 
 @charset "UTF-8";
