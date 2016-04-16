@@ -1824,6 +1824,7 @@ h1 {
 
 h4 {
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .container p {
@@ -3258,7 +3259,7 @@ h4 {
 h5 {
   font-size: 1.64rem;
   line-height: 110%;
-}
+ }
 
 h6 {
   font-size: 1rem;

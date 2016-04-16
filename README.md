@@ -1,5 +1,5 @@
 # Description
-This is a starter template with KoaJS, PostgreSQL, Materialize, Font-Awesome, and Gulp
+This is my portfolio and this was built with KoaJS, PostgreSQL, Materialize, Font-Awesome, and Gulp
 
 # Getting Started
 
