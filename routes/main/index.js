@@ -14,4 +14,7 @@ module.exports = function(app) {
 	app.get("/photos", function *() {
 		yield this.render("main/photos", {layout: 'main/_layout'});
 	});	
+	app.get("/sports", function *() {
+		yield this.render("main/sports", {layout: 'main/_layout'});
+	});		
 }

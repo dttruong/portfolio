@@ -1872,6 +1872,15 @@ sub {
 img {
   border-color: white;
   margin: 2px;
+  vertical-align: middle;
+}
+
+#sportsText {
+  font-size: 15px;
+}
+
+#leagueHeaders {
+  font-size: 30px;
 }
 
 /**
@@ -3231,6 +3240,10 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+}
+
+#sportsText {
+  vertical-align: middle;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -6206,9 +6219,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
-/***************
+/************************************************************
   HTML Styles
-***************/
+*************************************************************/
 body {
   background-color: #fcfcfc; }
 
@@ -6216,9 +6229,10 @@ p.box {
   padding: 20px; }
 
 p {
-  color: rgba(0, 0, 0, 0.71);
+  color: #fff;
   padding: 0;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased; 
+}
 
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased; }
