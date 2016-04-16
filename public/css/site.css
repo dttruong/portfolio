@@ -1872,6 +1872,9 @@ sub {
 img {
   border-color: white;
   margin: 2px;
+}
+
+#sportsLogo {
   vertical-align: middle;
 }
 
