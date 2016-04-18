@@ -14,22 +14,19 @@ var enforceHttps = require('koa-sslify');
 
 app.keys = [process.env.APP_SECRET_KEY];
 
-if(process.env.SSL_OFF !== '1')
-    app.use(enforceHttps({temporary: true}));
-
 app.use(bodyParser());
 
 //app.use(cookieRepo());
 
-app.use(knex({
-    client: 'pg',
-    connection: {
-        host     : process.env.DB_HOST,
-        user     : process.env.DB_USER,
-        password : process.env.DB_USER_PASSWORD,
-        database : process.env.DB_NAME
-    }
-}));
+// app.use(knex({
+//     client: 'pg',
+//     connection: {
+//         host     : process.env.DB_HOST,
+//         user     : process.env.DB_USER,
+//         password : process.env.DB_USER_PASSWORD,
+//         database : process.env.DB_NAME
+//     }
+// }));
 
 var requestTime = function (headerName){ // define middleware
     return function *(next){
@@ -63,11 +60,6 @@ app.use(serve('public'));
 require('./routes/init')(router);
 app.use(router.routes());
 
-if(process.env.SSL_OFF !== '1') { // use HTTPS
-    console.log("App listening via HTTPS listening on " + 443);
-    https.createServer(app.callback()).listen(443);
-}
-else { // use HTTP
-    http.createServer(app.callback()).listen(process.env.PORT || 5000);
-    console.log("App listening via HTTP listening on " + process.env.PORT || 5000);
-}
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log("App listening on " + port);
